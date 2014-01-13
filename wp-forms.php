@@ -1,11 +1,13 @@
 <?php
 /*
 Plugin Name: WP Forms
-Plugin URI: https://github.com/jbrinley/wp-forms
+Plugin URI: https://github.com/emeraldjava/wp-forms
 Description: An API for creating, altering, validating, and submitting forms via code.
-Author: Flightless
-Author URI: http://flightless.us/
-Version: 0.4
+Author: emeraldjava
+Author URI: https://github.com/emeraldjava
+Version: 0.4.1
+GitHub Plugin URI: https://github.com/emeraldjava/wp-forms
+GitHub Branch: master
 */
 /*
 Copyright (c) 2013 Flightless, Inc. http://flightless.us/
