@@ -15,7 +15,11 @@ class WP_Form_Decorator_Label extends WP_Form_Decorator {
 		if ( !empty($this->args['position']) ) {
 			$position = $this->args['position'];
 		}
-		$class = apply_filters('wp_form_label_html_class', 'form-label');
+		$class = 'col-md-4 control-label';//'form-label'
+		if($element->get_type()=='radio')
+			$class = 'radio-inline';
+		
+		//$class = apply_filters('wp_form_label_html_class', 'form-label');
 		switch ( $position ) {
 			case self::POSITION_AFTER:
 				$template = '%4$s <label for="%1$s" class="%2$s">%3$s</label>';
