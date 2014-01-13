@@ -7,10 +7,11 @@ class WP_Form_View_Radios extends WP_Form_View {
 			throw new LogicException(__('Cannot render radio group without a name', 'wp-forms'));
 		}
 		$options = $element->get_options();
-		$output = '';
+		$output = '<div class="col-md-8">';
 		foreach ( $options as $key => $label ) {
 			$output .= $this->radio( $key, $label, $attributes );
 		}
+		$output .= '</div>';
 		return $output;
 	}
 
